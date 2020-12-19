@@ -31,7 +31,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }
         }).then(function () {
           const pertanyaan = Swal.fire({
-            title: `${nama} kamuu sayang ga sama ${sender}?`,
+            title: `${nama} kamuu sayang ga sama ${Dhani}?`,
             showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Sayang bangett`,
@@ -39,7 +39,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`${Dhani} juga sayang banget sama ${nama}`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
@@ -53,9 +53,9 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Makasih banget ya byy udah sayang sama ${sender} ${val}%`).then(function () {
+                  Swal.fire(`Makasih banget ya byy udah sayang sama ${Dhani} ${val}%`).then(function () {
                     Swal.fire({
-                      title: `Sekarang ${nama} kangen ga sama ${sender}?`,
+                      title: `Sekarang ${nama} kangen ga sama ${Dhani}?`,
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
@@ -63,7 +63,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhuhuhuhuhu iya ${sender} juga kangen bangett samaaa ${nama} , makasihhh yaa :)`).then(function () {
+                        Swal.fire(`Huhuhuhuhuhu iya ${Dhani} juga kangen bangett samaaa ${nama} , makasihhh yaa :)`).then(function () {
                           Swal.fire('Kali ini terakhir dehh :)').then(function () {
                             Swal.fire('Coba tolong klik ikon hati di paling bawah dong')
                           })
@@ -78,7 +78,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-              Swal.fire(`Yakin kamu ga sayang sama ${sender}?`, '', 'error').then(function () {
+              Swal.fire(`Yakin kamu ga sayang sama ${Dhani}?`, '', 'error').then(function () {
                 Swal.fire('Ok deh :((')
               })
             }
